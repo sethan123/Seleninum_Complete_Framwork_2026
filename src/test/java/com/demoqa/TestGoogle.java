@@ -19,11 +19,7 @@ public class TestGoogle {
 		searchBox.submit();		
 		driver.getTitle();
 		driver.close();		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));		
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(100));
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("login")));
-		
-			
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(100));			
 		
 	}
 
